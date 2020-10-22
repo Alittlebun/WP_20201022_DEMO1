@@ -21,5 +21,10 @@ namespace WP_20201022_DEMO1
         {
 
         }
+
+        private void btnGO_Click(object sender, EventArgs e)
+        {
+            rtbMsg.Text = "呵呵呵";
+        }
     }
 }
