@@ -24,7 +24,19 @@ namespace WP_20201022_DEMO1
 
         private void btnGO_Click(object sender, EventArgs e)
         {
-            rtbMsg.Text = "呵呵呵";
+            Poker p = new Poker();
+            List<int> poker = p.GetPoker(52);
+
+            string msg = "";
+            for (int i = 0; i < poker.Count; i++)
+            {
+                msg += $"{poker[i]} ,";
+            }
+
+            rtbMsg.Text = msg + "\n";
+
+            
         }
+        
     }
 }
